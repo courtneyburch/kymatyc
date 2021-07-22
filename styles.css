@@ -104,7 +104,21 @@ nav a:hover{
   opacity: 1;
   transition: opacity 500ms ease-in-out; /*causes links to transition as nav menu opens to opacity of 1- when check state is activated*/ 
 }
-  
+ 
+main{
+    display: block;
+    padding: 4em 2em;
+    max-width: 90%
+}
+
+main p{
+    line-height: 1.5;
+}
+
+main h1{
+    display: none;
+    color: var(--dark-contrast);
+}
 @media screen and (min-width: 676px){ 
 .nav-toggle-label{
     display: none;
@@ -154,6 +168,13 @@ nav a:hover::before{
 }
 main{
     display: block;
+    padding: 6em 2em;
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+main h1{
+    display: block;
+    font-size: 1.5em;
 }
 
 
