@@ -168,13 +168,55 @@ nav a:hover::before{
 }
 main{
     display: block;
-    padding: 6em 2em;
+    padding: 5em 6em;
     font-size: 1.5em;
     line-height: 1.3;
 }
 main h1{
     display: block;
     font-size: 1.5em;
+}
+main a{
+    text-decoration: none;
+    color: var(--dark-contrast);
+}
+main a:hover, main a:focus{
+    color: var(--bright-contrast);
+}
+.footer  {
+    background: linear-gradient(to bottom right, transparent 49%, var(--background) 50%);
+    background-repeat: no-repeat;
+    position: relative;
+    /* z-index: 1; */
+    color: var(--light-contrast);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.footer::before, .footer::after {
+      content: '';
+      display: block;
+      height: 10%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      /* z-index: -1; */
+      padding;
+}
+.footer::before {
+    background-color: var(--bright-contrast);
+    bottom: 0;
+    transform: skewY(-4deg);
+    transform-origin: 0%;
+}
+
+.footer::after {
+    background-color: var(--bright-contrast);
+    bottom: 0;
+    transform: skewY(0deg);
+    transform-origin: 100%;
+}
 }
 
 
