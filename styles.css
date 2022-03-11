@@ -184,17 +184,19 @@ main a:hover, main a:focus{
     color: var(--bright-contrast);
 }
 .footer  {
-    background: linear-gradient(to bottom right, transparent 49%, var(--background) 50%);
-    background-repeat: no-repeat;
-    position: relative;
-    /* z-index: 1; */
+    background: linear-gradient(to bottom right, transparent 49%, var(--background) 50%); */
+     background-repeat: no-repeat;
+    position: relative; 
+    z-index: 1;
+    background-color: var(--background);
     color: var(--light-contrast);
     padding-top: 2em;
     padding-bottom: 2em;
     text-align: center;
+
 }
 
-.footer::before, .footer::after {
+ .footer::before, .footer::after {
       content: '';
       display: block;
       height: 10%;
@@ -202,21 +204,21 @@ main a:hover, main a:focus{
       position: absolute;
       right: 0;
       /* z-index: -1; */
-      padding;
+  
 }
-.footer::before {
+ .footer::before {
     background-color: var(--bright-contrast);
-    bottom: 0;
-    transform: skewY(-4deg);
-    transform-origin: 0%;
-}
+    top: 0; 
+     /* transform: skewY(-4deg); 
+    transform-origin: 0%;   */
+} 
 
-.footer::after {
-    background-color: var(--bright-contrast);
-    bottom: 0;
-    transform: skewY(0deg);
-    transform-origin: 100%;
-}
+  .footer::after {
+    background-color: var(--bright-contrast); 
+    bottom: 0; 
+     /* transform: skewY(0deg);
+    transform-origin: 100%;  */
+}  
 }
 
 
